@@ -1,2 +1,7 @@
-# Produce101Japan
-Pick your top 11/12 for Produce 101 Japan
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Make your top 12!>/h1>
+<p>Happy Produce Japan day!
+<body>
+<html>
