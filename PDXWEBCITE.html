@@ -1,0 +1,1688 @@
+<html><head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script src="https://www.google-analytics.com/analytics.js" type="text/javascript" async=""></script><script src="https://www.googletagmanager.com/gtag/js?id=UA-122340888-1" async=""></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-122340888-1');
+  </script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Produce X101 Ranker</title>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <meta name="viewport" content="initial-scale = 2.0, maximum-scale=1.0">
+  <link href="assets/pickme.png" rel="icon">
+  <link href="styles.css" rel="stylesheet" type="text/css" media="screen">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+</head>
+<body>
+  <div id="top-banner">
+
+    <img id="banner-image" src="assets/pdx_logo.png">
+    <p id="banner-title">PRODUCE X 101 RANKER</p>
+    <p id="banner-subtitle">Make your own lineup!</p>
+  </div>
+  <div class="flex-container padded-box">
+    <div>
+      <div id="tooltip-container">
+        <!-- add tool tip faq stuff here -->
+      </div>
+      <div id="table">
+        <div id="table__filter-container">
+          <input id="table__filter-input" oninput="filterTrainees(event)" type="text" placeholder="Search">
+        </div>
+        <div id="table__entry-container">
+          <!-- <div class="table__entry">
+            <div class="table__entry-icon">
+              <img class="table__entry-img" src="assets/trainees/LeeGaeun.jpg" />
+              <div class="table__entry-icon-border a-rank-border"></div>
+              <img class="table__entry-check" src="assets/check.png"/>
+            </div>
+            <div class="table__entry-text">
+              <strong><span class="name">Lee Gaeun</span></strong>
+              <span class="hangul">(이가은)</span>
+              <span class="company">PLEDIS ENTERTAINMENT</span>
+            </div>
+          </div> -->
+        
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/JungMyunghun.jpg">
+      <div class="table__entry-icon-border c-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Jung Myunghun</strong></span>
+      <span class="hangul">(정명훈)</span>
+      <span class="companyandyear">AAPY •
+      1997</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/KangHyeonsu.jpg">
+      <div class="table__entry-icon-border a-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Kang Hyeonsu</strong></span>
+      <span class="hangul">(강현수)</span>
+      <span class="companyandyear">AAPY •
+      1996</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/LeeMidam.jpg">
+      <div class="table__entry-icon-border c-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Lee Midam</strong></span>
+      <span class="hangul">(이미담)</span>
+      <span class="companyandyear">AAPY •
+      1997</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/KwonTaeeun.jpg">
+      <div class="table__entry-icon-border f-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Kwon Taeeun</strong></span>
+      <span class="hangul">(권태은)</span>
+      <span class="companyandyear">A.CONIC •
+      1999</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/ChoiSihyuk.jpg">
+      <div class="table__entry-icon-border c-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Choi Sihyuk</strong></span>
+      <span class="hangul">(최시혁)</span>
+      <span class="companyandyear">AROUND US •
+      2000</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/JeongJaehun.jpg">
+      <div class="table__entry-icon-border c-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Jeong Jaehun</strong></span>
+      <span class="hangul">(정재훈)</span>
+      <span class="companyandyear">AROUND US •
+      2000</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/WooJewon.jpg">
+      <div class="table__entry-icon-border b-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Woo Jewon</strong></span>
+      <span class="hangul">(우제원)</span>
+      <span class="companyandyear">AROUND US •
+      1998</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/HeoJinho.jpg">
+      <div class="table__entry-icon-border b-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Heo Jinho</strong></span>
+      <span class="hangul">(허진호)</span>
+      <span class="companyandyear">ASTORY •
+      1998</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/JeonHyunwoo.jpg">
+      <div class="table__entry-icon-border b-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Jeon Hyunwoo</strong></span>
+      <span class="hangul">(전현우)</span>
+      <span class="companyandyear">ASTORY •
+      1997</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/HongSeongjun.jpg">
+      <div class="table__entry-icon-border f-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Hong Seongjun</strong></span>
+      <span class="hangul">(홍성준)</span>
+      <span class="companyandyear">BRAND NEW MUSIC •
+      1999</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/KimSihun.jpg">
+      <div class="table__entry-icon-border a-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Kim Sihun</strong></span>
+      <span class="hangul">(김시훈)</span>
+      <span class="companyandyear">BRAND NEW MUSIC •
+      1999</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/LeeEunsang.jpg">
+      <div class="table__entry-icon-border c-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Lee Eunsang</strong></span>
+      <span class="hangul">(이은상)</span>
+      <span class="companyandyear">BRAND NEW MUSIC •
+      2002</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/YunJunghwan.jpg">
+      <div class="table__entry-icon-border b-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Yun Junghwan</strong></span>
+      <span class="hangul">(윤정환)</span>
+      <span class="companyandyear">BRAND NEW MUSIC •
+      2001</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/KeumDonghyun.jpg">
+      <div class="table__entry-icon-border c-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Keum Donghyun</strong></span>
+      <span class="hangul">(금동현)</span>
+      <span class="companyandyear">C9 •
+      2003</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/LeeJaebin.jpg">
+      <div class="table__entry-icon-border c-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Lee Jaebin</strong></span>
+      <span class="hangul">(이재빈)</span>
+      <span class="companyandyear">C9 •
+      2000</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/Peak.jpg">
+      <div class="table__entry-icon-border d-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Peak</strong></span>
+      <span class="hangul">(픽)</span>
+      <span class="companyandyear">CHANDELIER •
+      2001</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/GwonHuijun.jpg">
+      <div class="table__entry-icon-border f-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Gwon Huijun</strong></span>
+      <span class="hangul">(권희준)</span>
+      <span class="companyandyear">CRE.KER •
+      2001</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/StevenKim.jpg">
+      <div class="table__entry-icon-border d-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Steven Kim</strong></span>
+      <span class="hangul">(스티븐)</span>
+      <span class="companyandyear">DS •
+      2000</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/LeeHwan.jpg">
+      <div class="table__entry-icon-border b-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Lee Hwan</strong></span>
+      <span class="hangul">(이환)</span>
+      <span class="companyandyear">DSP •
+      1999</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/LeeJunhyuk.jpg">
+      <div class="table__entry-icon-border a-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Lee Junhyuk</strong></span>
+      <span class="hangul">(이준혁)</span>
+      <span class="companyandyear">DSP •
+      2000</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/SonDongpyo.jpg">
+      <div class="table__entry-icon-border a-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Son Dongpyo</strong></span>
+      <span class="hangul">(손동표)</span>
+      <span class="companyandyear">DSP •
+      2002</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/LeeWonjun.jpg">
+      <div class="table__entry-icon-border d-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Lee Wonjun</strong></span>
+      <span class="hangul">(이원준)</span>
+      <span class="companyandyear">E ENT •
+      2002</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/WonHyuk.jpg">
+      <div class="table__entry-icon-border d-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Won Hyuk</strong></span>
+      <span class="hangul">(원혁)</span>
+      <span class="companyandyear">E ENT •
+      2002</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/ChoiByunghoon.jpg">
+      <div class="table__entry-icon-border f-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Choi Byunghoon</strong></span>
+      <span class="hangul">(최병훈)</span>
+      <span class="companyandyear">ENFANTS TERRIBLES •
+      2000</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/AnzardiTimothee.jpg">
+      <div class="table__entry-icon-border f-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Anzardi Timothee</strong></span>
+      <span class="hangul">(앙자르디 디모데)</span>
+      <span class="companyandyear">ESTEEM •
+      1999</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/KimSeunghwan.jpg">
+      <div class="table__entry-icon-border f-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Kim Seunghwan</strong></span>
+      <span class="hangul">(김승환)</span>
+      <span class="companyandyear">ESTEEM •
+      1999</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/KimJingon.jpg">
+      <div class="table__entry-icon-border d-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Kim Jingon</strong></span>
+      <span class="hangul">(김진곤)</span>
+      <span class="companyandyear">ESTEEM •
+      1998</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/ParkYuri.jpg">
+      <div class="table__entry-icon-border d-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Park Yuri</strong></span>
+      <span class="hangul">(유리)</span>
+      <span class="companyandyear">ESTEEM •
+      1994</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/HanGichan.jpg">
+      <div class="table__entry-icon-border c-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Han Gichan</strong></span>
+      <span class="hangul">(한기찬)</span>
+      <span class="companyandyear">FANTAGIO •
+      1998</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/LeeSangho.jpg">
+      <div class="table__entry-icon-border x-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Lee Sangho</strong></span>
+      <span class="hangul">(이상호)</span>
+      <span class="companyandyear">GOST AGENCY •
+      1997</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/YunHyunjo.jpg">
+      <div class="table__entry-icon-border f-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Yun Hyunjo</strong></span>
+      <span class="hangul">(윤현조)</span>
+      <span class="companyandyear">GOST AGENCY •
+      1997</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/WonHyunsik.jpg">
+      <div class="table__entry-icon-border d-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Won Hyunsik</strong></span>
+      <span class="hangul">(원현식)</span>
+      <span class="companyandyear">HAPPY FACE •
+      1997</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/Tony.jpg">
+      <div class="table__entry-icon-border f-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Tony</strong></span>
+      <span class="hangul">(토니)</span>
+      <span class="companyandyear">HONG YI(FNC) •
+      2002</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/WeiZiyue.jpg">
+      <div class="table__entry-icon-border f-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Wei Ziyue</strong></span>
+      <span class="hangul">(위자월)</span>
+      <span class="companyandyear">HONG YI(FNC) •
+      1998</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/LeeSejin.jpg">
+      <div class="table__entry-icon-border f-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Lee Sejin</strong></span>
+      <span class="hangul">(이세진)</span>
+      <span class="companyandyear">IME •
+      1996</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/ChoiJunseong.jpg">
+      <div class="table__entry-icon-border d-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Choi Junseong</strong></span>
+      <span class="hangul">(최준성)</span>
+      <span class="companyandyear">JELLYFISH •
+      2002</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/KimMinkyu.jpg">
+      <div class="table__entry-icon-border d-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Kim Minkyu</strong></span>
+      <span class="hangul">(김민규)</span>
+      <span class="companyandyear">JELLYFISH •
+      2001</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/UeharaJun.jpg">
+      <div class="table__entry-icon-border c-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Uehara Jun</strong></span>
+      <span class="hangul">(우에하라 준)</span>
+      <span class="companyandyear">JH1 •
+      1996</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/YunSeobin.jpg">
+      <div class="table__entry-icon-border x-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Yun Seobin</strong></span>
+      <span class="hangul">(윤서빈)</span>
+      <span class="companyandyear">JYP •
+      1999</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/KimHyeongmin.jpg">
+      <div class="table__entry-icon-border c-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Kim Hyeongmin</strong></span>
+      <span class="hangul">(김형민)</span>
+      <span class="companyandyear">KIWI MEDIA •
+      1999</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/LimDahun.jpg">
+      <div class="table__entry-icon-border d-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Lim Dahun</strong></span>
+      <span class="hangul">(임다훈)</span>
+      <span class="companyandyear">KIWI MEDIA •
+      2000</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/SongChangha.jpg">
+      <div class="table__entry-icon-border c-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Song Changha</strong></span>
+      <span class="hangul">(송창하)</span>
+      <span class="companyandyear">KIWI MEDIA •
+      2000</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/KimKwanwoo.jpg">
+      <div class="table__entry-icon-border d-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Kim Kwanwoo</strong></span>
+      <span class="hangul">(김관우)</span>
+      <span class="companyandyear">KRAZY ENT •
+      1997</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/LeeJinwoo.jpg">
+      <div class="table__entry-icon-border b-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Lee Jinwoo</strong></span>
+      <span class="hangul">(이진우)</span>
+      <span class="companyandyear">MAROO •
+      2004</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/LeeTaesung.jpg">
+      <div class="table__entry-icon-border f-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Lee Taesung</strong></span>
+      <span class="hangul">(이태승)</span>
+      <span class="companyandyear">MAROO •
+      2003</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/LeeWoojin.jpg">
+      <div class="table__entry-icon-border f-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Lee Woojin</strong></span>
+      <span class="hangul">(이우진)</span>
+      <span class="companyandyear">MAROO •
+      2003</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/KimYeongsang.jpg">
+      <div class="table__entry-icon-border f-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Kim Yeongsang</strong></span>
+      <span class="hangul">(김영상)</span>
+      <span class="companyandyear">MBK •
+      1997</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/LeeHangyul.jpg">
+      <div class="table__entry-icon-border d-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Lee Hangyul</strong></span>
+      <span class="hangul">(이한결)</span>
+      <span class="companyandyear">MBK •
+      1999</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/NamDohyun.jpg">
+      <div class="table__entry-icon-border d-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Nam Dohyun</strong></span>
+      <span class="hangul">(남도현)</span>
+      <span class="companyandyear">MBK •
+      2004</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/YooGeunmin.jpg">
+      <div class="table__entry-icon-border d-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Yoo Geunmin</strong></span>
+      <span class="hangul">(유건민)</span>
+      <span class="companyandyear">MILLION MARKET •
+      1998</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/KimDongbin.jpg">
+      <div class="table__entry-icon-border c-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Kim Dongbin</strong></span>
+      <span class="hangul">(김동빈)</span>
+      <span class="companyandyear">MLD •
+      2001</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/KimKookheon.jpg">
+      <div class="table__entry-icon-border a-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Kim Kookheon</strong></span>
+      <span class="hangul">(김국헌)</span>
+      <span class="companyandyear">MUSIC WORKS •
+      1997</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/SongYuvin.jpg">
+      <div class="table__entry-icon-border a-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Song Yuvin</strong></span>
+      <span class="hangul">(송유빈)</span>
+      <span class="companyandyear">MUSIC WORKS •
+      1998</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/OhSaebom.jpg">
+      <div class="table__entry-icon-border c-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Oh Saebom</strong></span>
+      <span class="hangul">(오새봄)</span>
+      <span class="companyandyear">NEST •
+      1994</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/ParkYunsol.jpg">
+      <div class="table__entry-icon-border a-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Park Yunsol</strong></span>
+      <span class="hangul">(박윤솔)</span>
+      <span class="companyandyear">NEST •
+      1996</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/KimYohan.jpg">
+      <div class="table__entry-icon-border c-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Kim Yohan</strong></span>
+      <span class="hangul">(김요한)</span>
+      <span class="companyandyear">OUI •
+      1999</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/ChoiByungchan.jpg">
+      <div class="table__entry-icon-border a-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Choi Byungchan</strong></span>
+      <span class="hangul">(최병찬)</span>
+      <span class="companyandyear">PLAN A •
+      1997</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/HanSeungwoo.jpg">
+      <div class="table__entry-icon-border a-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Han Seungwoo</strong></span>
+      <span class="hangul">(한승우)</span>
+      <span class="companyandyear">PLAN A •
+      1994</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/ParkSion.jpg">
+      <div class="table__entry-icon-border f-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Park Sion</strong></span>
+      <span class="hangul">(박시온)</span>
+      <span class="companyandyear">PLASMA •
+      2002</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/SungMinseo.jpg">
+      <div class="table__entry-icon-border d-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Sung Minseo</strong></span>
+      <span class="hangul">(성민서)</span>
+      <span class="companyandyear">SF ENT •
+      2001</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/ParkSunho.jpg">
+      <div class="table__entry-icon-border b-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Park Sunho</strong></span>
+      <span class="hangul">(박선호)</span>
+      <span class="companyandyear">SIDUS HQ •
+      1993</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/TsaiChiahao.jpg">
+      <div class="table__entry-icon-border d-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Tsai Chiahao</strong></span>
+      <span class="hangul">(채가호)</span>
+      <span class="companyandyear">SOURCE MUSIC •
+      1998</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/KimHyeonbin.jpg">
+      <div class="table__entry-icon-border a-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Kim Hyeonbin</strong></span>
+      <span class="hangul">(김현빈)</span>
+      <span class="companyandyear">SOURCE MUSIC •
+      2002</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/YoonMingook.jpg">
+      <div class="table__entry-icon-border b-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Yoon Mingook</strong></span>
+      <span class="hangul">(윤민국)</span>
+      <span class="companyandyear">SOURCE MUSIC •
+      2002</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/HamWonjin.jpg">
+      <div class="table__entry-icon-border a-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Ham Wonjin</strong></span>
+      <span class="hangul">(함원진)</span>
+      <span class="companyandyear">STARSHIP •
+      2001</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/KangMinhee.jpg">
+      <div class="table__entry-icon-border d-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Kang Minhee</strong></span>
+      <span class="hangul">(강민희)</span>
+      <span class="companyandyear">STARSHIP •
+      2002</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/KooJungmo.jpg">
+      <div class="table__entry-icon-border f-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Koo Jungmo</strong></span>
+      <span class="hangul">(구정모)</span>
+      <span class="companyandyear">STARSHIP •
+      2000</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/MoonHyunbin.jpg">
+      <div class="table__entry-icon-border a-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Moon Hyunbin</strong></span>
+      <span class="hangul">(문현빈)</span>
+      <span class="companyandyear">STARSHIP •
+      2000</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/SongHyeongjun.jpg">
+      <div class="table__entry-icon-border d-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Song Hyeongjun</strong></span>
+      <span class="hangul">(송형준)</span>
+      <span class="companyandyear">STARSHIP •
+      2002</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/KimSunghyun.jpg">
+      <div class="table__entry-icon-border c-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Kim Sunghyun</strong></span>
+      <span class="hangul">(김성현)</span>
+      <span class="companyandyear">STONE MUSIC •
+      1996</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/NamDonghyun.jpg">
+      <div class="table__entry-icon-border c-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Nam Donghyun</strong></span>
+      <span class="hangul">(남동현)</span>
+      <span class="companyandyear">THE SOUTH •
+      1999</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/KimJunjae.jpg">
+      <div class="table__entry-icon-border f-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Kim Junjae</strong></span>
+      <span class="hangul">(김준재)</span>
+      <span class="companyandyear">THINK ABOUT •
+      2000</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/KimWooseok.jpg">
+      <div class="table__entry-icon-border a-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Kim Wooseok</strong></span>
+      <span class="hangul">(김우석)</span>
+      <span class="companyandyear">TOP MEDIA •
+      1996</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/LeeJinhyuk.jpg">
+      <div class="table__entry-icon-border a-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Lee Jinhyuk</strong></span>
+      <span class="hangul">(이진혁)</span>
+      <span class="companyandyear">TOP MEDIA •
+      1996</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/ByeonSeongtae.jpg">
+      <div class="table__entry-icon-border d-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Byeon Seongtae</strong></span>
+      <span class="hangul">(변성태)</span>
+      <span class="companyandyear">URBAN WORKS •
+      1998</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/HongSunghyen.jpg">
+      <div class="table__entry-icon-border c-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Hong Sunghyen</strong></span>
+      <span class="hangul">(홍성현)</span>
+      <span class="companyandyear">URBAN WORKS •
+      1996</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/KimDongkyu.jpg">
+      <div class="table__entry-icon-border b-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Kim Dongkyu</strong></span>
+      <span class="hangul">(김동규)</span>
+      <span class="companyandyear">URBAN WORKS •
+      2000</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/KimBinseo.jpg">
+      <div class="table__entry-icon-border b-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Kim Binseo</strong></span>
+      <span class="hangul">(김민서)</span>
+      <span class="companyandyear">URBAN WORKS •
+      2002</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/BaekJin.jpg">
+      <div class="table__entry-icon-border f-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Baek Jin</strong></span>
+      <span class="hangul">(백진)</span>
+      <span class="companyandyear">VINE •
+      1995</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/LeeGyuhyung.jpg">
+      <div class="table__entry-icon-border c-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Lee Gyuhyung</strong></span>
+      <span class="hangul">(이규형)</span>
+      <span class="companyandyear">WM •
+      1994</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/ChaJunho.jpg">
+      <div class="table__entry-icon-border c-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Cha Junho</strong></span>
+      <span class="hangul">(차준호)</span>
+      <span class="companyandyear">WOOLLIM ENTERTAINMENT •
+      2002</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/HwangYunseong.jpg">
+      <div class="table__entry-icon-border d-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Hwang Yunseong</strong></span>
+      <span class="hangul">(황윤성)</span>
+      <span class="companyandyear">WOOLLIM ENTERTAINMENT •
+      2000</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/JooChanguk.jpg">
+      <div class="table__entry-icon-border b-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Joo Changuk</strong></span>
+      <span class="hangul">(주창욱)</span>
+      <span class="companyandyear">WOOLLIM ENTERTAINMENT •
+      2001</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/KimDongyun.jpg">
+      <div class="table__entry-icon-border b-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Kim Dongyun</strong></span>
+      <span class="hangul">(김동윤)</span>
+      <span class="companyandyear">WOOLLIM ENTERTAINMENT •
+      2001</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/JooChanguk.jpg">
+      <div class="table__entry-icon-border b-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Joo Changuk</strong></span>
+      <span class="hangul">(주창욱)</span>
+      <span class="companyandyear">WOOLLIM ENTERTAINMENT •
+      2001</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/KimMinseo.jpg">
+      <div class="table__entry-icon-border f-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Kim Minseo</strong></span>
+      <span class="hangul">(김민서)</span>
+      <span class="companyandyear">WOOLLIM ENTERTAINMENT •
+      2002</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/MoonJunho.jpg">
+      <div class="table__entry-icon-border f-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Moon Junho</strong></span>
+      <span class="hangul">(문준호)</span>
+      <span class="companyandyear">WOOLLIM ENTERTAINMENT •
+      2000</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/ChoiJinhwa.jpg">
+      <div class="table__entry-icon-border d-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Choi Jinhwa</strong></span>
+      <span class="hangul">(최진화)</span>
+      <span class="companyandyear">WUZO •
+      2002</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/HidakaMahiro.jpg">
+      <div class="table__entry-icon-border d-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Hidaka Mahiro</strong></span>
+      <span class="hangul">(히다카 마히로)</span>
+      <span class="companyandyear">YG •
+      2001</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/WangJyunhao.jpg">
+      <div class="table__entry-icon-border f-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Wang Jyunhao</strong></span>
+      <span class="hangul">(왕군호)</span>
+      <span class="companyandyear">YG •
+      2000</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/ChoSeungyoun.jpg">
+      <div class="table__entry-icon-border b-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Cho Seungyoun</strong></span>
+      <span class="hangul">(조승연)</span>
+      <span class="companyandyear">YUEHUA ENTERTAINMENT •
+      1996</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/HwangGeumryul.jpg">
+      <div class="table__entry-icon-border b-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Hwang Geumryul</strong></span>
+      <span class="hangul">(황금률)</span>
+      <span class="companyandyear">YUEHUA ENTERTAINMENT •
+      1998</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/YuSeongjun.jpg">
+      <div class="table__entry-icon-border f-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Yu Seongjun</strong></span>
+      <span class="hangul">(유성준)</span>
+      <span class="companyandyear">YUEHUA ENTERTAINMENT •
+      2001</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/ChoiSuhwan.jpg">
+      <div class="table__entry-icon-border a-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Choi Suhwan</strong></span>
+      <span class="hangul">(최수환)</span>
+      <span class="companyandyear">INDIVIDUAL •
+      2001</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/ImSiu.jpg">
+      <div class="table__entry-icon-border --rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Im Siu</strong></span>
+      <span class="hangul">(임시우)</span>
+      <span class="companyandyear">INDIVIDUAL •
+      1999</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/JungYoungbin.jpg">
+      <div class="table__entry-icon-border b-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Jung Youngbin</strong></span>
+      <span class="hangul">(정영빈)</span>
+      <span class="companyandyear">INDIVIDUAL •
+      1998</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/KangSeokhwa.jpg">
+      <div class="table__entry-icon-border b-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Kang Seokhwa</strong></span>
+      <span class="hangul">(강석화)</span>
+      <span class="companyandyear">INDIVIDUAL •
+      2000</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/KimSungyeon.jpg">
+      <div class="table__entry-icon-border b-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Kim Sungyeon</strong></span>
+      <span class="hangul">(김성연)</span>
+      <span class="companyandyear">INDIVIDUAL •
+      2002</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/LeeEugene.jpg">
+      <div class="table__entry-icon-border f-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Lee Eugene</strong></span>
+      <span class="hangul">(이유진)</span>
+      <span class="companyandyear">INDIVIDUAL •
+      2004</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/LeeHamin.jpg">
+      <div class="table__entry-icon-border b-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Lee Hamin</strong></span>
+      <span class="hangul">(이하민)</span>
+      <span class="companyandyear">INDIVIDUAL •
+      1996</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/LeeHyeop.jpg">
+      <div class="table__entry-icon-border c-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Lee Hyeop</strong></span>
+      <span class="hangul">(이협)</span>
+      <span class="companyandyear">INDIVIDUAL •
+      1999</span>
+    </div>
+  </div>
+  <div class="table__entry false">
+    <div class="table__entry-icon">
+      <img class="table__entry-img" src="assets/trainees/ParkJinyeol.jpg">
+      <div class="table__entry-icon-border c-rank-border"></div>
+      
+      
+    </div>
+    <div class="table__entry-text">
+      <span class="name"><strong>Park Jinyeol</strong></span>
+      <span class="hangul">(박진열)</span>
+      <span class="companyandyear">INDIVIDUAL •
+      2001</span>
+    </div>
+  </div></div>
+      </div>
+      <div id="filters-container">
+        <div id="filters-header"><strong>Filters</strong></div>
+        <div>
+          <input name="show-eliminated" id="show-eliminated" onclick="showEliminatedClick(event)" type="checkbox">
+          <label class="checkbox-label" for="show-eliminated">Show Eliminated (At Bottom)</label>
+        </div>
+        <div>
+          <input name="show-top11" id="show-top11" onclick="showTop11Click(event)" type="checkbox">
+          <label class="checkbox-label" for="show-top11">Show Current Top 10</label>
+        </div>
+      </div>
+    <div id="sharelink-container">
+        <!-- button -->
+        <input id="getlink-button" onclick="generateShareLink()" type="button" value="Get link">
+        <!-- text box -->
+        <input id="getlink-textbox" type="text" readonly="" placeholder="http://">
+        <!-- button in text box -->
+        <input id="copylink-button" onclick="copyLink()" type="button" value="Copy">
+      </div>
+    </div>
+    <div id="ranking__pyramid">
+      <div id="ranking__title"><strong>TOP 10 + X</strong></div>
+      <div class="ranking__row">
+        <!-- <div class="ranking__entry">
+          <div class="ranking__entry-icon">
+            <img class="ranking__entry-img" src="assets/trainees/LeeGaeun.jpg" />
+            <div class="ranking__entry-icon-border a-rank-border"></div>
+            <div class="ranking__entry-icon-badge">1</div>
+          </div>
+          <div class="ranking__row-text">
+            <div class="name"><strong>Lee Gaeun</strong></div>
+            <div class="company">PLEDIS ENT.</div>
+          </div>
+        </div> -->
+      
+  <div class="ranking__entry false">
+    <div class="ranking__entry-view">
+      <div class="ranking__entry-icon">
+        <img class="ranking__entry-img" src="assets/trainees/emptyrank.png">
+        <div class="ranking__entry-icon-border no-rank-border" data-rankid="0"></div>
+      </div>
+      <div class="ranking__entry-icon-badge bg-no">1</div>
+      
+    </div>
+    <div class="ranking__row-text">
+      <div class="name"><strong>​</strong></div>
+      <div class="company">​</div>
+    </div>
+  </div></div>
+      <div class="ranking__row">
+  <div class="ranking__entry false">
+    <div class="ranking__entry-view">
+      <div class="ranking__entry-icon">
+        <img class="ranking__entry-img" src="assets/trainees/emptyrank.png">
+        <div class="ranking__entry-icon-border no-rank-border" data-rankid="1"></div>
+      </div>
+      <div class="ranking__entry-icon-badge bg-no">2</div>
+      
+    </div>
+    <div class="ranking__row-text">
+      <div class="name"><strong>​</strong></div>
+      <div class="company">​</div>
+    </div>
+  </div>
+  <div class="ranking__entry false">
+    <div class="ranking__entry-view">
+      <div class="ranking__entry-icon">
+        <img class="ranking__entry-img" src="assets/trainees/emptyrank.png">
+        <div class="ranking__entry-icon-border no-rank-border" data-rankid="2"></div>
+      </div>
+      <div class="ranking__entry-icon-badge bg-no">3</div>
+      
+    </div>
+    <div class="ranking__row-text">
+      <div class="name"><strong>​</strong></div>
+      <div class="company">​</div>
+    </div>
+  </div></div>
+      <div class="ranking__row">
+  <div class="ranking__entry false">
+    <div class="ranking__entry-view">
+      <div class="ranking__entry-icon">
+        <img class="ranking__entry-img" src="assets/trainees/emptyrank.png">
+        <div class="ranking__entry-icon-border no-rank-border" data-rankid="3"></div>
+      </div>
+      <div class="ranking__entry-icon-badge bg-no">4</div>
+      
+    </div>
+    <div class="ranking__row-text">
+      <div class="name"><strong>​</strong></div>
+      <div class="company">​</div>
+    </div>
+  </div>
+  <div class="ranking__entry false">
+    <div class="ranking__entry-view">
+      <div class="ranking__entry-icon">
+        <img class="ranking__entry-img" src="assets/trainees/emptyrank.png">
+        <div class="ranking__entry-icon-border no-rank-border" data-rankid="4"></div>
+      </div>
+      <div class="ranking__entry-icon-badge bg-no">5</div>
+      
+    </div>
+    <div class="ranking__row-text">
+      <div class="name"><strong>​</strong></div>
+      <div class="company">​</div>
+    </div>
+  </div>
+  <div class="ranking__entry false">
+    <div class="ranking__entry-view">
+      <div class="ranking__entry-icon">
+        <img class="ranking__entry-img" src="assets/trainees/emptyrank.png">
+        <div class="ranking__entry-icon-border no-rank-border" data-rankid="5"></div>
+      </div>
+      <div class="ranking__entry-icon-badge bg-no">6</div>
+      
+    </div>
+    <div class="ranking__row-text">
+      <div class="name"><strong>​</strong></div>
+      <div class="company">​</div>
+    </div>
+  </div></div>
+      <div class="ranking__row">
+  <div class="ranking__entry false">
+    <div class="ranking__entry-view">
+      <div class="ranking__entry-icon">
+        <img class="ranking__entry-img" src="assets/trainees/emptyrank.png">
+        <div class="ranking__entry-icon-border no-rank-border" data-rankid="6"></div>
+      </div>
+      <div class="ranking__entry-icon-badge bg-no">7</div>
+      
+    </div>
+    <div class="ranking__row-text">
+      <div class="name"><strong>​</strong></div>
+      <div class="company">​</div>
+    </div>
+  </div>
+  <div class="ranking__entry false">
+    <div class="ranking__entry-view">
+      <div class="ranking__entry-icon">
+        <img class="ranking__entry-img" src="assets/trainees/emptyrank.png">
+        <div class="ranking__entry-icon-border no-rank-border" data-rankid="7"></div>
+      </div>
+      <div class="ranking__entry-icon-badge bg-no">8</div>
+      
+    </div>
+    <div class="ranking__row-text">
+      <div class="name"><strong>​</strong></div>
+      <div class="company">​</div>
+    </div>
+  </div>
+  <div class="ranking__entry false">
+    <div class="ranking__entry-view">
+      <div class="ranking__entry-icon">
+        <img class="ranking__entry-img" src="assets/trainees/emptyrank.png">
+        <div class="ranking__entry-icon-border no-rank-border" data-rankid="8"></div>
+      </div>
+      <div class="ranking__entry-icon-badge bg-no">9</div>
+      
+    </div>
+    <div class="ranking__row-text">
+      <div class="name"><strong>​</strong></div>
+      <div class="company">​</div>
+    </div>
+  </div>
+  <div class="ranking__entry false">
+    <div class="ranking__entry-view">
+      <div class="ranking__entry-icon">
+        <img class="ranking__entry-img" src="assets/trainees/emptyrank.png">
+        <div class="ranking__entry-icon-border no-rank-border" data-rankid="9"></div>
+      </div>
+      <div class="ranking__entry-icon-badge bg-no">10</div>
+      
+    </div>
+    <div class="ranking__row-text">
+      <div class="name"><strong>​</strong></div>
+      <div class="company">​</div>
+    </div>
+  </div>
+  <div class="ranking__entry false">
+    <div class="ranking__entry-view">
+      <div class="ranking__entry-icon">
+        <img class="ranking__entry-img" src="assets/trainees/emptyrank.png">
+        <div class="ranking__entry-icon-border no-rank-border" data-rankid="10"></div>
+      </div>
+      <div class="ranking__entry-icon-badge bg-no">11</div>
+      
+    </div>
+    <div class="ranking__row-text">
+      <div class="name"><strong>​</strong></div>
+      <div class="company">​</div>
+    </div>
+  </div></div>
+    </div>
+  </div>
+    <footer>
+        <p>Originally made by <a href="https://produce48.github.io/" target="https://produce48.github.io/">Produce48.github.io</a> </p>
+        <p>Come join us on our <a href="https://discord.gg/2aVqMKX" target="https://discord.gg/2aVqMKX">Produce X 101 Discord</a> ! </p>
+    </footer>
+
+  <!-- Load in script files -->
+  <script src="scripts/csv.js"></script>
+  <script src="scripts/dragula.min.js"></script>
+  <script src="scripts/dragdrop.js"></script>
+  <script src="scripts/traineesort.js"></script>
+  <script src="scripts/main.js"></script>
+
+
+
+</body></html>
